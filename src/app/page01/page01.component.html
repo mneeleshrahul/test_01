@@ -1,0 +1,150 @@
+<!-- page01.component.html -->
+
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <span>Your OTT App</span>
+      <span class="spacer"></span>
+      <button mat-icon-button>
+        <mat-icon>search</mat-icon>
+      </button>
+      <button mat-icon-button>
+        <mat-icon>account_circle</mat-icon>
+      </button>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  
+  <mat-form-field appearance="fill" class="search-bar">
+    <mat-label>Search for content</mat-label>
+    <input matInput placeholder="Search for content">
+  </mat-form-field>
+  
+  <!-- Hero Section -->
+  <div class="hero-section">
+    <!-- Featured Content -->
+    <div class="featured-content">
+      <!-- Display your hero banner content here -->
+    </div>
+  </div>
+  
+  <!-- Trending Now -->
+  <div class="trending-section">
+    <h2>Trending Now</h2>
+    <!-- Display trending content with Angular Material cards and horizontal scrolling -->
+    <div class="trending-content">
+      <!-- Trending content goes here -->
+    </div>
+  </div>
+  
+  <!-- Recommended for You -->
+  <div class="recommended-section">
+    <h2>Recommended for You</h2>
+    <!-- Display personalized recommendations with Angular Material cards and horizontal scrolling -->
+    <div class="recommended-content">
+      <!-- Recommended content goes here -->
+    </div>
+  </div>
+  
+  <!-- Content Categories -->
+  <div class="categories-section">
+    <h2>Explore by Genre</h2>
+    <!-- Display genre categories with Angular Material grid -->
+    <div class="genre-categories">
+      <!-- Genre categories go here -->
+    </div>
+  </div>
+  
+  <!-- Continue Watching -->
+  <div class="continue-watching-section">
+    <h2>Continue Watching</h2>
+    <!-- Display continue watching content with Angular Material cards and horizontal scrolling -->
+    <div class="continue-watching-content">
+      <!-- Continue watching content goes here -->
+    </div>
+  </div>
+  
+  <!-- User Ratings and Reviews -->
+  <div class="ratings-reviews-section">
+    <h2>User Ratings and Reviews</h2>
+    <!-- Display user ratings and reviews with Angular Material cards and horizontal scrolling -->
+    <div class="ratings-reviews-content">
+      <!-- Ratings and reviews content goes here -->
+    </div>
+  </div>
+  
+  <!-- Footer -->
+  <mat-toolbar class="footer" color="primary">
+    <mat-toolbar-row>
+      <span class="footer-link">About Us</span>
+      <span class="footer-link">FAQs</span>
+      <span class="footer-link">Terms of Service</span>
+      <span class="footer-link">Contact</span>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <!-- ... existing content ... -->
+
+<!-- Featured Videos Section -->
+<div class="featured-videos-section">
+    <h2>Featured Videos</h2>
+    <div class="featured-videos">
+      <!-- Display featured videos with video containers -->
+      <!-- Example video container, you can repeat this for each video -->
+      <div class="video-container">
+        <img src="video-thumbnail.jpg" alt="Video Thumbnail">
+        <div class="video-details">
+          <h3>Title of the Video</h3>
+          <p>Description of the video. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Additional Features Section -->
+  <div class="additional-features-section">
+    <h2>Additional Features</h2>
+  
+    <!-- Add a section for a live stream -->
+    <div class="live-stream-section">
+      <h3>Live Stream</h3>
+      <!-- Display live stream content or information -->
+      <p>Currently live streaming: "Live Event Title"</p>
+      <button mat-raised-button color="primary">Watch Live</button>
+    </div>
+  
+    <!-- Add a section for upcoming events -->
+    <div class="upcoming-events-section">
+      <h3>Upcoming Events</h3>
+      <!-- Display upcoming events -->
+      <ul>
+        <li>Event 1 - Date & Time</li>
+        <li>Event 2 - Date & Time</li>
+        <!-- Add more events as needed -->
+      </ul>
+    </div>
+  
+    <!-- Add a section for announcements or news -->
+    <div class="announcements-section">
+      <h3>Announcements</h3>
+      <!-- Display announcements or news -->
+      <p>Important announcement or news content goes here.</p>
+    </div>
+  </div>
+  <!-- page01.component.html -->
+
+<mat-card *ngFor="let movie of movies">
+  <img [src]="movie.thumbnail" alt="{{ movie.title }}">
+  <div class="content-details">
+    <h3>{{ movie.title }}</h3>
+    <p>{{ movie.description }}</p>
+    <button mat-button (click)="addToWatchlist(movie)">Add to Watchlist</button>
+  </div>
+</mat-card>
+
+  
+  <!-- ... rest of your content ... -->
+  <!-- page01.component.html -->
+
+<!-- ... existing content ... -->
+
+<app-category-section></app-category-section>
+
+<!-- ... rest of your content ... -->

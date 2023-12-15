@@ -1,0 +1,42 @@
+/* page01.component.css */
+
+mat-toolbar {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  .search-bar {
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  .mat-form-field {
+    background-color: white; /* Set background color to white */
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  /* Set label and input color to blue */
+  .mat-form-field-appearance-fill .mat-form-field-label,
+  .mat-form-field-appearance-fill .mat-input-element {
+    color: blue;
+  }
+  
+  .hero-section {
+    /* Add your hero section styles */
+  }
+  
+  /* Add other styles for different sections as needed */
+  
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer-link {
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  
